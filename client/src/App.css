@@ -1,0 +1,285 @@
+
+
+/* Main app container */
+.App {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #c7115d;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Header styling */
+/* Styling for the page heading (h1) */
+h1 {
+  text-align: center;
+  color: #2809da; /* White color for contrast */
+  font-size: 30px; /* Larger size for visibility */
+  font-weight: 700; /* Bold for importance */
+  text-transform: uppercase; /* Capital letters for a formal feel */
+  margin-bottom: 20px;
+  letter-spacing: 2px; /* Add some spacing for a clean look */
+  position: relative; /* To position the underline effect */
+  background: linear-gradient(135deg, #f2f701, #30e20c); /* Blue gradient background */
+  padding: 20px; /* Padding around text for better spacing */
+  border-radius: 10px; /* Rounded corners for the background */
+  box-shadow: 0 4px 15px rgba(27, 7, 7, 0.2); /* Add subtle shadow for depth */
+  display: inline-block; /* Make the heading fit around the text */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+/* Hover effect for the page heading */
+h1:hover {
+  color: #cc0d93; /* Change text color on hover */
+  cursor: pointer;
+  transform: scale(1.04); /* Slight zoom-in effect */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Increased shadow effect on hover */
+}
+
+/* Adding a glowing effect for the text */
+h1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  color: rgb(63, 22, 175);
+  width: 100%;
+  height: 4px;
+  background-color: #080606; /* Glowing underline */
+  box-shadow: 0 0 8px #f5f5f5; /* Soft glowing effect */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+h1:hover::after {
+  opacity: 1; /* Underline appears when hovering */
+}
+
+/* Smooth transition for the heading */
+h1 {
+  transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.time-picker label{
+  display: block;
+  margin-bottom: 5px;
+  color: rgb(236, 243, 237);
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  font-weight:bold ;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+
+  }
+  .time-range label{
+    display: block;
+  margin-bottom: 5px;
+  color: rgb(236, 243, 237);
+  font-weight: 700;
+  font-family: 'Arial', sans-serif;
+  font-weight:bold ;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  }
+  .labal3{
+    margin-top: 18px;
+  }
+
+  .create-order
+  {
+    margin-top: 30px;
+    /* background-color: #5909c2; */
+    color: white;
+    -webkit-text-fill-color: #0bf303;
+    padding: 15px 25px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    font-size: 30px;     
+
+  }
+  .order-amount{
+    margin-top: 18px;
+    color: #5cf105;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Arial', sans-serif;
+
+  }
+/* Form and input fields styling */
+input[type="datetime-local"], input[type="time"], input[type="number"], button {
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #4CAF50;
+  
+  transition: background-color 0.3s ease;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 20%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Styling the order form */
+.order-form {
+  margin-bottom: 20px;
+}
+
+/* Styling the order list and table */
+.order-list {
+  margin-top: 30px;
+}
+
+
+/* Styling for the h2 title in order list */
+.order-list h2 {
+  margin-bottom: 15px;
+  color: #5cf105;
+  font-size: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for the h2 title */
+.order-list h2:hover {
+  color: #0bf303; /* Beautiful color change on hover */
+  cursor: pointer;
+  text-shadow: 0 0 12px rgba(252, 53, 3, 0.8); /* Subtle glowing effect */
+}
+
+/* Adding underline animation effect on hover */
+.order-list h2::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 3px;
+  background-color: #f8fdf8; /* Underline color */
+  transition: width 0.3s ease-in-out;
+}
+
+.order-list h2:hover::before {
+  width: 100%; /* Underline expands on hover */
+}
+
+/* Adding a slight scale effect when hovered */
+.order-list h2:hover {
+  transform: scale(1.1); /* Slight zoom-in effect */
+}
+.pp{
+  color: white;
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-style: italic;
+  
+}
+
+/* Table styling */
+.order-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 4px 6px rgba(89, 224, 11, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.order-list th, .order-list td {
+  padding: 12px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 16px;
+  color: #32ec0d;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+/* Table header styling */
+.order-list th {
+  background: linear-gradient(135deg, #6e7c7c, #4CAF50);
+  color: #e0f804;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: normal;
+  font-family: 'Arial', sans-serif;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for table rows */
+.order-list tr:hover {
+  background-color: #a06e6e;
+}
+.order-list tr:nth-child(odd) {
+  background-color:white;
+}
+
+/* Alternate row colors for better readability */
+.order-list tr:nth-child(even) {
+  background-color: #141111;
+}
+
+/* Row hover effect for better interaction */
+.order-list tr:hover {
+  background-color: #e3f2e1;
+}
+
+/* Focused row when selected */
+.order-list tr:focus-within {
+  background-color: #11b2c7;
+}
+
+/* Responsive table */
+@media (max-width: 768px) {
+  .order-list table {
+    font-size: 14px;
+  }
+
+  .order-list th, .order-list td {
+    padding: 8px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .order-list table {
+    font-size: 12px;
+  }
+
+  .order-list th, .order-list td {
+    padding: 6px 8px;
+  }
+}
